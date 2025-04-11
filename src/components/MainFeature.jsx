@@ -1,10 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { 
-  Plus, Minus, X, Divide, Percent, 
-  SquareRoot, Trash2, Delete, RefreshCw,
-  Save, RotateCcw
-} from 'lucide-react'
+import { Plus, Minus, X, Divide, Percent, Calculator, Trash2, Delete, RefreshCw, Save, RotateCcw } from 'lucide-react'
 
 const MainFeature = ({ onCalculation }) => {
   // Calculator state
@@ -350,7 +346,7 @@ const MainFeature = ({ onCalculation }) => {
             className="calc-button-operation"
             aria-label="Square root"
           >
-            <SquareRoot size={18} />
+            <Calculator size={18} />
           </motion.button>
           <motion.button 
             whileTap="tap"
